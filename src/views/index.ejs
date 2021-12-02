@@ -26,21 +26,23 @@
             </thead>
             <tbody>
                 <% shortUrls.forEach(url => { %>
-                    <td>
-                        <a href="<%= url.full %>">
-                            <%= url.full %>
-                        </a>
-                    </td>
-                    <td>
-                        <a href="<%= url.short %>">
-                            <%= url.short %>
-                        </a>
-                    </td>
-                    <td>
-                        <a href="<%= url.clicks %>">
-                            <%= url.clicks %>
-                        </a>
-                    </td>
+                    <tr>
+                        <td>
+                            <a target="_blank" href="<%= url.full %>">
+                                <%= url.full %>
+                            </a>
+                        </td>
+                        <td>
+                            <a target="_blank" href="<%= url.short %>">
+                                <%= url.short %>
+                            </a>
+                        </td>
+                        <td>
+                            <a target="_blank" href="<%= url.clicks %>">
+                                <%= url.clicks %>
+                            </a>
+                        </td>
+                    </tr>
                 <% }) %>
             </tbody>
         </table>
