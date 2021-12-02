@@ -8,6 +8,12 @@ class AppController {
       next(error);
     }
   };
+  public shortUrl = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+    } catch (error) {
+      next(error);
+    }
+  };
 }
 
 export default AppController;
