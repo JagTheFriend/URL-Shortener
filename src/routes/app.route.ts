@@ -14,6 +14,7 @@ class AppRoute implements Routes {
   private initializeRoutes() {
     this.router.get(`${this.path}`, this.appController.index);
     this.router.post(`${this.path}shortUrl`, this.appController.shortUrl);
+    this.router.get(`${this.path}:shortUrl`, this.appController.viewShortUrl);
   }
 }
 
